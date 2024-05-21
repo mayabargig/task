@@ -37,7 +37,7 @@ const HomeEdit: React.FC<{ user?: UserType; closeModal: () => void }> = ({ user,
     try {
 
       const blob = new Blob([JSON.stringify(updatedFormData)], { type: 'application/json' });
-      const response = await fetch('http://localhost:5173/users/edit/req', {
+      const response = await fetch('https://pet-zone-1c1e7d128c02.herokuapp.com//users/edit/req', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'
