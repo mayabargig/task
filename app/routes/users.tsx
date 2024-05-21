@@ -52,7 +52,7 @@ const GetUsers: React.FC = () => {
     }
 
       const blob = new Blob([JSON.stringify({ id })], { type: 'application/json' });
-      const response = await fetch('https://pet-zone-1c1e7d128c02.herokuapp.com//users/del', {
+      const response = await fetch('https://pet-zone-1c1e7d128c02.herokuapp.com/users/del', {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'

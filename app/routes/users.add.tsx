@@ -68,7 +68,7 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ closeModal }) => {
       formData.pet.gender
     ) {
       try {
-        const response = await fetch('https://pet-zone-1c1e7d128c02.herokuapp.com//users/add/req', {
+        const response = await fetch('https://pet-zone-1c1e7d128c02.herokuapp.com/users/add/req', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
