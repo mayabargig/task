@@ -12,7 +12,7 @@ const removeUndefinedValuesFromObject = <T extends object>(object: T): T =>
     }, {}) as any
 
 export const UpdateUser = async (updatedFormData: UserType) => {
-    console.log('updatedFormData', updatedFormData)
+    // console.log('updatedFormData', updatedFormData)
     const { id, email, firstName, lastName, phoneNumber, address, pet, userName, gender } = updatedFormData;
     const updatedAddress = removeUndefinedValuesFromObject(
         address || {}
@@ -41,6 +41,6 @@ export const UpdateUser = async (updatedFormData: UserType) => {
             'pet': needToUpdatePet
         }
     }
-    console.log('updateData', updateData)
+    // console.log('updateData', updateData)
     return await prisma.user.update(updateData);
 };

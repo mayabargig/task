@@ -20,7 +20,6 @@ export default function Auth() {
   };
 
   const handleNewUser = async (formData) => {
-    console.log(formData);
     navigate('/');
 
     // if (

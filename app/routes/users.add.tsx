@@ -77,7 +77,7 @@ const AddUserModal: React.FC<AddUserModalProps> = ({ closeModal }) => {
         });
 
         if (response.ok) {
-          console.log("add successfully!");
+          // console.log("add successfully!");
           navigate('/users');
         } else {
           const result = await response.json();

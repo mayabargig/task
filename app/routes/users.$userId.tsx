@@ -11,7 +11,6 @@ const prisma = new PrismaClient();
 export const loader: LoaderFunction = async ({ params }) => {
   invariant(params.userId, "Missing userId param");
   debugger
-  console.log(params);
 
   const user = await prisma.user.findUnique({
     where: {

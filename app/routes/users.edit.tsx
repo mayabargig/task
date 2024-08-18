@@ -46,7 +46,7 @@ const HomeEdit: React.FC<{ user?: UserType; closeModal: () => void }> = ({ user,
       });
 
       if (response.ok) {
-        console.log("add successfully!");
+        // console.log("add successfully!");
         navigate('/users');
         closeModal();
       } else {

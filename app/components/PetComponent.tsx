@@ -1,8 +1,6 @@
 import LogoDog from "~/images/logoDog.png"
 
 const GetPet: React.FC = ({pet}) => {
-    console.log(pet);
-    
 
   return (
     <div>

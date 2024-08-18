@@ -5,8 +5,6 @@ const prisma = new PrismaClient();
 export const DeleteUser = async (id: string | undefined) => {
   try {
 
-    console.log(id);
-
     await prisma.$transaction([
       prisma.pet.deleteMany({
         where: {
@@ -25,7 +23,7 @@ export const DeleteUser = async (id: string | undefined) => {
       }),
     ]);
 
-    console.log('user deleted successfully');
+    // console.log('user deleted successfully');
   } catch (error) {
     console.error('Error deleting posts and user:', error);
   }

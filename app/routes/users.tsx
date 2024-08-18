@@ -22,7 +22,6 @@ export const loader: LoaderFunction = async () => {
 
 const GetUsers: React.FC = () => {
   const { users } = useLoaderData<{ users: UserType[] }>();
-  console.log('users', users)
 
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,7 +60,7 @@ const GetUsers: React.FC = () => {
       });
 
       if (response.ok) {
-        console.log("delete successfully!");
+        // console.log("delete successfully!");
         navigate('/users');
 
       } else {
