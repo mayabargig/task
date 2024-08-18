@@ -6,8 +6,8 @@ import ThemeBtn from "~/context/ThemeBtn"
 import LogoPetZone from '../images/DogFeet.png'
 
 const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
+  name: 'Maya Bargig',
+  email: 'mayabargig@gmail.com',
   imageUrl:
     'https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png',
 }
@@ -15,10 +15,10 @@ const navigation = [
   { name: 'home', href: '/', current: true },
   { name: 'users', href: '/users', current: false },
 ]
-const userNavigation = [
-  { name: 'Your Profile', href: "66460a417ce63f9f19b0f3d3"},
-  { name: 'Sign out', href: '#' },
-]
+// const userNavigation = [
+//   { name: 'Your Profile', href: "66460a417ce63f9f19b0f3d3"},
+//   { name: 'Sign out', href: '#' },
+// ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -85,7 +85,7 @@ export default function NavBar() {
                             <img className="h-8 w-8 rounded-full bg-black" src={user.imageUrl} alt="userImage" />
                           </Menu.Button>
                         </div>
-                        <Transition
+                        {/* <Transition
                           as={Fragment}
                           enter="transition ease-out duration-100"
                           enterFrom="transform opacity-0 scale-95"
@@ -110,7 +110,7 @@ export default function NavBar() {
                               </Menu.Item>
                             ))}
                           </Menu.Items>
-                        </Transition>
+                        </Transition> */}
                       </Menu>
                     </div>
                   </div>
