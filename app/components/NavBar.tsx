@@ -6,8 +6,8 @@ import ThemeBtn from "~/context/ThemeBtn"
 import LogoPetZone from '../images/DogFeet.png'
 
 const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
+  name: 'Maya Bargig',
+  email: 'mayabargig@gmail.com',
   imageUrl:
     'https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png',
 }
@@ -16,8 +16,8 @@ const navigation = [
   { name: 'users', href: '/users', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: "66460a417ce63f9f19b0f3d3"},
-  { name: 'Sign out', href: '#' },
+  // { name: 'Your Profile', href: "/users/66460a417ce63f9f19b0f3d3"},
+  // { name: 'Sign out', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -85,7 +85,7 @@ export default function NavBar() {
                             <img className="h-8 w-8 rounded-full bg-black" src={user.imageUrl} alt="userImage" />
                           </Menu.Button>
                         </div>
-                        <Transition
+                        {/* <Transition
                           as={Fragment}
                           enter="transition ease-out duration-100"
                           enterFrom="transform opacity-0 scale-95"
@@ -93,12 +93,12 @@ export default function NavBar() {
                           leave="transition ease-in duration-75"
                           leaveFrom="transform opacity-100 scale-100"
                           leaveTo="transform opacity-0 scale-95"
-                          >
-                          <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none  dark:text-white dark:bg-black">
+                          > */}
+                          {/* <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none  dark:text-white dark:bg-black">
                             {userNavigation.map((item) => (
                               <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                  <Link to={`./users/${item.href}`}
+                                  <Link to={`${item.href}`}
                                     className={classNames(
                                       active ? 'bg-gray-100  dark:text-white ' : '',
                                         'block px-4 py-2 text-sm text-gray-700  dark:text-white '
@@ -109,8 +109,8 @@ export default function NavBar() {
                                 )}
                               </Menu.Item>
                             ))}
-                          </Menu.Items>
-                        </Transition>
+                          </Menu.Items> */}
+                        {/* </Transition> */}
                       </Menu>
                     </div>
                   </div>
