@@ -165,7 +165,7 @@ export default function NavBar() {
                       <ThemeBtn aria-hidden="true" />
                     </button>
                   </div>
-                  <div className="mt-3 space-y-1 px-2">
+                  {/* <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
                       <Disclosure.Button
                       key={item.name}
@@ -176,7 +176,7 @@ export default function NavBar() {
                         {item.name}
                       </Disclosure.Button>
                     ))}
-                  </div>
+                  </div> */}
                 </div>
               </Disclosure.Panel>
             </>
